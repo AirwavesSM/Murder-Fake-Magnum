@@ -1,8 +1,6 @@
 # Murder Fake Magnum (EN)
 Attention!!! This addon is designed and works only in the Murder gamemode.
 
-Attention!!! This addon is designed and works only in the game mode Murder
-
 Description
 Adds a "Fake Magnum" weapon to the game, which is automatically issued to the killer at the beginning of each round. It looks exactly like a regular magnum, but has much less damage than the original, which allows the maniac to pretend to be an eyewitness with a secret weapon.
 
