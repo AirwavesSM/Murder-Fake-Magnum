@@ -1,5 +1,3 @@
-[Russian README]([https://pages.github.com/](https://github.com/AirwavesSM/Murder-Fake-Magnum/blob/main/README_RU.md)).
-
 # Murder Fake Magnum (EN)
 Attention!!! This addon is designed and works only in the Murder gamemode.
 
