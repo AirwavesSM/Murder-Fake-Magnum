@@ -1,3 +1,3 @@
-if GAMEMODE_NAME == "murder" or "Murder" then
-	include("sv_murder.lua")
-end
+include("sv_murder.lua")
+
+include("cl_murder.lua")
