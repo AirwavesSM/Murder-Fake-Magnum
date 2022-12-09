@@ -1,3 +1,5 @@
+Damage = CreateConVar("mu_fakemagnum_damage", 17, FCVAR_ARCHIVE + FCVAR_NOTIFY, "Damage caused by a fake magnum", 0,500)
+
 if SERVER then
 	AddCSLuaFile()
 else
@@ -15,6 +17,8 @@ SWEP.ViewModel = "models/weapons/c_357.mdl"
 SWEP.WorldModel = "models/weapons/w_357.mdl"
 SWEP.ViewModelFlip = false
 
+SWEP.Author = "Airwaves"
+
 SWEP.HoldType = "revolver"
 SWEP.SequenceDraw = "draw"
 SWEP.SequenceIdle = "idle01"
@@ -26,7 +30,6 @@ SWEP.Primary.Automatic = false
 SWEP.Primary.Sound = "Weapon_357.Single"
 SWEP.Primary.Sequence = "fire"
 -- SWEP.Primary.Delay = 0.
-SWEP.Primary.Damage = 17
 SWEP.Primary.Cone = 0
 SWEP.Primary.DryFireSequence = "fireempty"
 SWEP.Primary.DryFireSound = Sound("Weapon_Pistol.Empty")
@@ -34,7 +37,7 @@ SWEP.Primary.Recoil = 9
 SWEP.Primary.InfiniteAmmo = true
 SWEP.Primary.AutoReload = true
 
-SWEP.Author = "Airwaves"
+SWEP.Primary.Damage = Damage:GetInt()
 
 SWEP.ReloadSequence = "reload"
 SWEP.ReloadSound = Sound("Weapon_357.Reload")
