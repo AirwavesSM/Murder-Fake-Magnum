@@ -1,3 +1,3 @@
-include("sv_murder.lua")
+if SERVER then include("sv_murder.lua") end
 
-include("cl_murder.lua")
+if CLIENT then include("cl_murder.lua") end

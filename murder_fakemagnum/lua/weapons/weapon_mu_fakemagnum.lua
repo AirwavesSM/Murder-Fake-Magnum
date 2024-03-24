@@ -42,10 +42,10 @@ SWEP.Primary.Damage = Damage:GetInt()
 SWEP.ReloadSequence = "reload"
 SWEP.ReloadSound = Sound("Weapon_357.Reload")
 
-SWEP.PrintName = "Fake Magnum"
+SWEP.PrintName = translate and translate.fakemagnum or "Fake Magnum1"
 function SWEP:Initialize()
 	self.BaseClass.Initialize(self)
-	self.PrintName = "Fake Magnum"
+	self.PrintName = translate and translate.fakemagnum or "Fake Magnum1"
 	self:SetClip1(self:GetMaxClip1())
 end
 

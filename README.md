@@ -2,26 +2,27 @@
 Attention!!! This addon is designed and works only in the Murder gamemode.
 
 ## Description
-Adds a "Fake Magnum" weapon to the game, which is automatically issued to the killer at the beginning of each round. It looks exactly like a regular magnum, but has much less damage than the original, which allows the maniac to pretend to be an eyewitness with a secret weapon.
+Adds a "Fake Magnum" weapon to the game, which is automatically issued to murder at beginning of each round (or any another role). It looks exactly like a regular magnum, but has much less damage than the original, which allows murder to pretend to be an bystander with a secret weapon.
 
 ## Settings/Console commands
 ### Server
- * mu_fakemagnum_lootneed [0/15] - the required amount of evidence to obtain a fake magnum (max 15)
- * mu_fakemagnum_lootneed_multiplier [0/1] - whether to issue a weapon for every X evidence specified by the command above or the same issue once (1 - yes, 0 - no)
- * mu_fakemagnum_give on start [0/1] - whether to issue weapons at the beginning of the round (1 - yes, 0 - no)
- * mu_fakemagnum_autoselect [0/1] - will the magnum be automatically handed out after receipt (1 - yes, 0 - no)
- * mu_fakemagnum_damage [0/500] - weapon damage (to apply, you need to restart the server)
+ * **mu_fakemagnum_lootneed [0/15]** *(default: 2)* - sets the required amount of loot needed to obtain the fake magnum
+ * **mu_fakemagnum_lootneed_multiplier [0/1]** *(default: 1)* - should the weapon be given for every X loot specified by the above command or given once (1 - yes, 0 - no)
+ * **mu_fakemagnum_giveonstartrole [all/mur/bys/nil]** *(default: mur)* - which roles should be given the weapon at the start of the round (all - killer and a random innocent, mur - killer, bys - random innocent, nil - none)
+ * **mu_fakemagnum_autoselect [0/1]** *(default: 1)* - should the magnum automatically be selected upon obtaining it (1 - yes, 0 - no)
+ * **mu_fakemagnum_canpickup [all/mur/bys/nil]** *(default: all)* - who can pick up and collect the magnum for loot. Also affects who can obtain it at the start of the round (all - anyone, mur - only killer, bys - only innocents, nil - no one)
+ * **mu_fakemagnum_damage [0/500]** *(default: 17)* - the damage dealt by the magnum. Changing this parameter may require a server restart.
 ### Client
- * mu_halo_render [0/1] - whether to display an outline around all objects of the Murder mode (1 - yes, 0 - no) - Standard Murder command, supported by the addon
- * mu_halo_fake magnum [0/1] - whether to display an outline around a fake magnum (1 - yes, 0 - no)
+ * **mu_halo_render [0/1]** *(default: 1)* - should outlines be displayed around all objects in the Murder gamemode (1 - yes, 0 - no)
+ * **mu_halo_fake magnum [0/1]** *(default: 1)* - should an outline be displayed around the fake magnum (1 - yes, 0 - no)
 
 ## Improvement plans
- * Setting up the ability to issue a weapon to an eyewitness
- * Setting up the issue of weapons for evidence ✔
- * Customize the dropout and selection of weapons by other players
+ * Setting up the ability to issue a weapon to an bystander ✔
+ * Setting up the issue of weapons for clues ✔
+ * Customize the dropout and selection of weapons by other players ✔
  * Damage Adjustment ✔
  * Possible support for all Murder languages
 
 Addon in workshop - https://steamcommunity.com/sharedfiles/filedetails/?id=2897038687
 
-###### Addon version - v0.7a
+###### Addon version - v1.0.0
