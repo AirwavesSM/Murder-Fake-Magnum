@@ -16,7 +16,7 @@ Adds a "Fake Magnum" weapon to the game, which is automatically issued to murder
 -   **mu_fakemagnum_autoselect [0/1]** _(default: 1)_ - should the magnum automatically be selected upon obtaining it (1 - yes, 0 - no)
 -   **mu_fakemagnum_canpickup [all/mur/bys/nil]** _(default: all)_ - who can pick up and collect the magnum for loot. Also affects who can obtain it at the start of the round (all - anyone, mur - only killer, bys - only innocents, nil - no one)
 -   **mu_fakemagnum_damage [0/500]** _(default: 17)_ - the damage dealt by the magnum. Changing this parameter may require a server restart.
--   **mu_english [english/russian and ect.]** _(default: english)_ - Magnum name and gamememode language
+-   **mu_language [english/russian and ect.]** _(default: english)_ - Magnum name and gamememode language
 
 ### Client
 
